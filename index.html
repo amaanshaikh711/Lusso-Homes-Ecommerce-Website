@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lusso Homes - Premium Furniture Store</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/final_logo.jpg">
-    <link rel="apple-touch-icon" href="img/final_logo.jpg">
+    <link rel="icon" type="image/jpeg" href="img/logo_LH.jpg">
+    <link rel="apple-touch-icon" href="img/logo_LH.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <a href="index.html" class="logo">
-                    <img src="img/final_logo.jpg" alt="Lusso Homes Logo" class="logo-img">
+                    <img src="img/logo_LH.jpg" alt="Lusso Homes Logo" class="logo-img">
                     <span class="logo-text">Lusso Homes</span>
                 </a>
                 
@@ -88,32 +88,79 @@
 
     <!-- Featured Categories -->
     <section class="section-padding">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title">Shop by Category</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div class="container mx-auto px-4" styles="margin-top:-85px;">
+            <h2 class="section-title" >Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
                 <div class="category-card" onclick="filterCategory('sofas')">
                     <div class="category-icon">
                         <i class="fas fa-couch text-4xl"></i>
                     </div>
                     <h3 class="category-title">Sofas</h3>
                 </div>
+
                 <div class="category-card" onclick="filterCategory('beds')">
                     <div class="category-icon">
                         <i class="fas fa-bed text-4xl"></i>
                     </div>
                     <h3 class="category-title">Beds</h3>
                 </div>
+
                 <div class="category-card" onclick="filterCategory('chairs')">
                     <div class="category-icon">
                         <i class="fas fa-chair text-4xl"></i>
                     </div>
                     <h3 class="category-title">Chairs</h3>
                 </div>
-                <div class="category-card" onclick="filterCategory('tables')">
+
+                <!-- Tables broken into multiple table-type cards -->
+                <div class="category-card" onclick="filterCategory('study-tables')">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Study Tables</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('center-tables')">
                     <div class="category-icon">
                         <i class="fas fa-table text-4xl"></i>
                     </div>
-                    <h3 class="category-title">Tables</h3>
+                    <h3 class="category-title">Center Tables</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('dining-tables')">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Dining Tables</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('side-tables')">
+                    <div class="category-icon">
+                        <i class="fas fa-th text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Side Tables</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('console-tables')">
+                    <div class="category-icon">
+                        <i class="fas fa-columns text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Console Tables</h3>
+                </div>
+
+                <!-- Additional categories: Wardrobes and Shoe Racks -->
+                <div class="category-card" onclick="filterCategory('wardrobes')">
+                    <div class="category-icon">
+                        <i class="fas fa-warehouse text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Wardrobes</h3>
+                </div>
+
+                <div class="category-card" onclick="filterCategory('shoe-racks')">
+                    <div class="category-icon">
+                        <i class="fas fa-shoe-prints text-4xl"></i>
+                    </div>
+                    <h3 class="category-title">Shoe Racks</h3>
                 </div>
             </div>
         </div>
@@ -187,7 +234,7 @@
     </section>
 
     <!-- Mini Promotional Banners -->
-    <section class="section-padding">
+    <!-- <section class="section-padding">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="promo-card">
@@ -207,7 +254,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Tables Section -->
     <section class="section-padding bg-white">
@@ -323,10 +370,8 @@
                 <div>
                     <h4 class="footer-heading">Connect With Us</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/share/19yLx9SDQk/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lussohomes.in?igsh=cDNtaXI4MXhjOTNw" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

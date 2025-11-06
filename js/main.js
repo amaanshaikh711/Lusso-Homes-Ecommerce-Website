@@ -192,7 +192,7 @@ function createProductCard(product) {
     const isWishlisted = isInWishlist(product.id);
     
     return `
-        <div class="product-card" onclick="goToProduct(${product.id})">
+        <div class="product-card" onclick="viewProduct(${product.id})">
             <div class="product-image-container">
                 <img src="${getImageUrl(product.image)}" alt="${product.name}" class="product-image" loading="lazy">
                 <button class="product-wishlist-btn ${isWishlisted ? 'active' : ''}" 
@@ -250,8 +250,11 @@ function filterCategory(category) {
 }
 
 // Go to product details page
-function goToProduct(productId) {
-    window.location.href = `product-details.html?id=${productId}`;
+function viewProduct(productId) {
+    const path = window.location.pathname || '';
+    const needsParent = path.includes('/pages/') || path.includes('\\pages\\');
+    const url = needsParent ? '' : 'pages/';
+    window.location.href = `${url}product-detail.html?id=${productId}`;
 }
 
 // Initialize banner carousels

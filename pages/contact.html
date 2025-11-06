@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Lusso Homes</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../img/final_logo.jpg">
-    <link rel="apple-touch-icon" href="../img/final_logo.jpg">
+    <link rel="icon" type="image/jpeg" href="../img/logo_LH.jpg">
+    <link rel="apple-touch-icon" href="../img/logo_LH.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +25,8 @@
     <nav class="navbar">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="../index.html" class="logo">
-                    <img src="../img/final_logo.jpg" alt="Lusso Homes Logo" class="logo-img">
+                <a href="index.html" class="logo">
+                    <img src="../img/logo_LH.jpg" alt="Lusso Homes Logo" class="logo-img">
                     <span class="logo-text">Lusso Homes</span>
                 </a>
                 
@@ -91,7 +91,7 @@
                     </div>
                     <h3 class="contact-info-title">Email Us</h3>
                     <p class="contact-info-text">We'll respond within 24 hours</p>
-                    <a href="mailto:info@lussohomes.com" class="contact-info-link">info@lussohomes.com</a>
+                    <a href="mailto:business@lussohomes.in" class="contact-info-link">business@lussohomes.in</a>
                 </div>
                 <div class="contact-info-card">
                     <div class="contact-info-icon">
@@ -143,6 +143,7 @@
                                 <select name="subject" class="form-input" required>
                                     <option value="">Select a subject</option>
                                     <option value="interior-design">Interior Design Consultation</option>
+                                    <option value="modular-kitchen">Modular Kitchen</option>
                                     <option value="custom-furniture">Custom Furniture Order</option>
                                     <option value="product-inquiry">Product Inquiry</option>
                                     <option value="support">Customer Support</option>
@@ -202,20 +203,11 @@
                         </h3>
                         <p class="info-sidebar-text">Stay connected for latest updates, design inspiration, and exclusive offers.</p>
                         <div class="contact-social-icons">
-                            <a href="#" class="contact-social-link facebook">
+                            <a href="https://www.facebook.com/share/19yLx9SDQk/" class="contact-social-link facebook" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="contact-social-link instagram">
+                            <a href="https://www.instagram.com/lussohomes.in?igsh=cDNtaXI4MXhjOTNw" class="contact-social-link instagram" target="_blank">
                                 <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="contact-social-link twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="contact-social-link pinterest">
-                                <i class="fab fa-pinterest-p"></i>
-                            </a>
-                            <a href="#" class="contact-social-link linkedin">
-                                <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
                     </div>
@@ -251,17 +243,9 @@
     <section class="map-section" id="map">
         <div class="container mx-auto px-4">
             <h2 class="section-title mb-12">Find Us</h2>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571252226!2d72.71637353593747!3d19.082502005908358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0; border-radius: 12px;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+            <center><div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7700.0667452082525!2d72.81964998927758!3d19.072489238791267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDA0JzE4LjUiTiA3MsKwNDknMTkuMyJF!5e0!3m2!1sen!2sin!4v1762458621531!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div></center>
         </div>
     </section>
 
@@ -352,10 +336,8 @@
                 <div>
                     <h4 class="footer-heading">Connect With Us</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/share/19yLx9SDQk/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lussohomes.in?igsh=cDNtaXI4MXhjOTNw" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -414,6 +396,28 @@
                 faqItem.classList.add('active');
             }
         }
+
+        // Set subject from URL parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            if (service) {
+                const subjectSelect = document.querySelector('select[name="subject"]');
+                if (subjectSelect) {
+                    if (service === 'modular-kitchen') {
+                        const option = subjectSelect.querySelector('option[value="modular-kitchen"]');
+                        if (option) {
+                            subjectSelect.value = 'modular-kitchen';
+                        }
+                    } else if (service === 'interior-designing') {
+                        const option = subjectSelect.querySelector('option[value="interior-design"]');
+                        if (option) {
+                            subjectSelect.value = 'interior-design';
+                        }
+                    }
+                }
+            }
+        });
     </script>
 </body>
 </html>

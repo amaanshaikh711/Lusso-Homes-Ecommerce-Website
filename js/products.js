@@ -42,7 +42,7 @@ const products = [
         dimensions: "210cm x 95cm x 80cm"
     },
     {
-        id: 2,
+        id: 5,
         name: "Valencia Velvet 3-Seater Sofa",
         category: "sofas",
         price: 89999,
@@ -51,36 +51,36 @@ const products = [
         material: "Velvet, Teak Wood",
         dimensions: "220cm x 90cm x 85cm"
     },
-    {
-        id: 6,
-        name: "Contemporary Fabric Sofa",
-        category: "sofas",
-        price: 74999,
-        image: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800",
-        description: "Clean lines with comfortable cushioning",
-        material: "Textured Fabric, Solid Wood",
-        dimensions: "200cm x 88cm x 82cm"
-    },
-    {
-        id: 7,
-        name: "Scandinavian Style Sofa",
-        category: "sofas",
-        price: 94999,
-        image: "https://images.unsplash.com/photoss-1551298370-9d3d53740c72?w=800",
-        description: "Nordic-inspired design with wooden legs",
-        material: "Wool Blend, Beech Wood",
-        dimensions: "195cm x 85cm x 78cm"
-    },
-    {
-        id: 8,
-        name: "Luxury Italian Leather Sofa",
-        category: "sofas",
-        price: 179999,
-        image: "https://images.unsplash.com/photo-159830ss0042247-d088f8ab3a91?w=800",
-        description: "Handcrafted Italian leather with superior comfort",
-        material: "Italian Leather, Walnut Wood",
-        dimensions: "240cm x 100cm x 88cm"
-    },
+    // {
+    //     id: 6,
+    //     name: "Contemporary Fabric Sofa",
+    //     category: "sofas",
+    //     price: 74999,
+    //     image: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800",
+    //     description: "Clean lines with comfortable cushioning",
+    //     material: "Textured Fabric, Solid Wood",
+    //     dimensions: "200cm x 88cm x 82cm"
+    // },
+    // {
+    //     id: 7,
+    //     name: "Scandinavian Style Sofa",
+    //     category: "sofas",
+    //     price: 94999,
+    //     image: "https://images.unsplash.com/photoss-1551298370-9d3d53740c72?w=800",
+    //     description: "Nordic-inspired design with wooden legs",
+    //     material: "Wool Blend, Beech Wood",
+    //     dimensions: "195cm x 85cm x 78cm"
+    // },
+    // {
+    //     id: 8,
+    //     name: "Luxury Italian Leather Sofa",
+    //     category: "sofas",
+    //     price: 179999,
+    //     image: "https://images.unsplash.com/photo-159830ss0042247-d088f8ab3a91?w=800",
+    //     description: "Handcrafted Italian leather with superior comfort",
+    //     material: "Italian Leather, Walnut Wood",
+    //     dimensions: "240cm x 100cm x 88cm"
+    // },
 
     // Beds
     {
@@ -133,36 +133,36 @@ const products = [
         material: "Engineered Wood",
         dimensions: "Queen Size (152cm x 190cm)"
     },
-    {
-        id: 14,
-        name: "Canopy Bed with Posts",
-        category: "beds",
-        price: 154999,
-        image: "https://images.unsplash.com/photo-157889888723te1-dff65121b59f?w=800",
-        description: "Statement four-poster design",
-        material: "Solid Mango Wood",
-        dimensions: "King Size (183cm x 203cm)"
-    },
-    {
-        id: 15,
-        name: "Contemporary Leather Bed",
-        category: "beds",
-        price: 129999,
-        image: "https://images.unsplash.com/photo-161rg5529328331-f8917597711f?w=800",
-        description: "Sleek leather finish with LED lighting",
-        material: "Premium Leather, Metal Frame",
-        dimensions: "King Size (183cm x 203cm)"
-    },
-    {
-        id: 16,
-        name: "Rustic Farmhouse Bed",
-        category: "beds",
-        price: 89999,
-        image: "https://images.unsplash.com/photo-1564078516393-csdf04bd966897?w=800",
-        description: "Reclaimed wood aesthetic with vintage charm",
-        material: "Reclaimed Teak Wood",
-        dimensions: "Queen Size (152cm x 190cm)"
-    },
+    // {
+    //     id: 14,
+    //     name: "Canopy Bed with Posts",
+    //     category: "beds",
+    //     price: 154999,
+    //     image: "https://images.unsplash.com/photo-157889888723te1-dff65121b59f?w=800",
+    //     description: "Statement four-poster design",
+    //     material: "Solid Mango Wood",
+    //     dimensions: "King Size (183cm x 203cm)"
+    // },
+    // {
+    //     id: 15,
+    //     name: "Contemporary Leather Bed",
+    //     category: "beds",
+    //     price: 129999,
+    //     image: "https://images.unsplash.com/photo-161rg5529328331-f8917597711f?w=800",
+    //     description: "Sleek leather finish with LED lighting",
+    //     material: "Premium Leather, Metal Frame",
+    //     dimensions: "King Size (183cm x 203cm)"
+    // },
+    // {
+    //     id: 16,
+    //     name: "Rustic Farmhouse Bed",
+    //     category: "beds",
+    //     price: 89999,
+    //     image: "https://images.unsplash.com/photo-1564078516393-csdf04bd966897?w=800",
+    //     description: "Reclaimed wood aesthetic with vintage charm",
+    //     material: "Reclaimed Teak Wood",
+    //     dimensions: "Queen Size (152cm x 190cm)"
+    // },
 
     // Chairs
     {
@@ -245,212 +245,412 @@ const products = [
         material: "Natural Rattan, Cotton Cushion",
         dimensions: "65cm x 70cm x 85cm"
     },
-
-    // Tables
+    
+    // Study Tables
     {
         id: 25,
-        name: "Orren Jermani Dining Table",
-        category: "tables",
-        price: 81999,
-        image: "img/Dining Tables with chair/Dining Table- Orren Jermani Dining Table- 6.5'x3'- 81999.jpeg",
-        description: "Elegant marble surface with gold legs",
-        material: "Italian Marble, Brass Legs",
-        dimensions: "180cm x 90cm x 75cm"
+        name: "Study Table - Brontë Desk",
+        category: "study-tables",
+        price: 32999,
+        image: "img/Study Tables/Study Table - Brontë Desk - 32999.jpeg",
+        description: "Classic design with ample workspace",
+        material: "Premium Hardwood, Metal Accents",
+        dimensions: "Standard Study Table Size"
     },
     {
         id: 26,
-        name: " Pakloer European cream style dining table set",
-        category: "tables",
-        price: 91999,
-        image: "img/Dining Tables with chair/Dining Table- Pakloer European cream style dining table set - 91999.jpeg",
-        description: "Rustic charm with natural wood grain",
-        material: "Solid Sheesham Wood",
-        dimensions: "120cm x 60cm x 45cm"
+        name: "Study Table - Manor Table",
+        category: "study-tables",
+        price: 41999,
+        image: "img/Study Tables/Study Table- Manor Table - 3' x 1'10 - 41999 - Copy.jpeg",
+        description: "Elegant manor-style study desk with spacious surface",
+        material: "Solid Wood, Metal Hardware",
+        dimensions: "3' x 1'10\""
     },
     {
         id: 27,
-        name: "Retro Modern Oval Sintered Stone Dining Table Set",
-        category: "tables",
-        price: 129999,
-        image: "img/Dining Tables with chair/Dining Table- Retro Modern Oval Sintered Stone Dining Table Sets - 129999.jpeg",
-        description: "Modern design with tempered glass",
-        material: "Tempered Glass, Metal Frame",
-        dimensions: "140cm x 40cm x 80cm"
+        name: "Study Table - Stratford Table",
+        category: "study-tables",
+        price: 45999,
+        image: "img/Study Tables/Study Table- Stratford Table -1'10 x 3'- 45999.jpeg",
+        description: "Contemporary design with modern aesthetics",
+        material: "Engineered Wood, Metal Frame",
+        dimensions: "1'10\" x 3'"
     },
     {
         id: 28,
-        name: "Velisse Table",
-        category: "tables",
-        price: 83999,
-        image: "img/Dining Tables with chair/Dining Table- Velisse Table- 6.5'x3'- 83999.jpeg",
-        description: "Urban aesthetic with storage drawers",
-        material: "Reclaimed Wood, Iron Frame",
-        dimensions: "140cm x 70cm x 75cm"
+        name: "Study Table - Ventana Writing Desk",
+        category: "study-tables",
+        price: 30999,
+        image: "img/Study Tables/Study Table- Ventana Writing Desk- 30999.jpeg",
+        description: "Modern writing desk with minimalist design",
+        material: "Premium MDF, Steel Frame",
+        dimensions: "Standard Writing Desk Size"
     },
     {
         id: 29,
-        name: "Dining Table-Sleek Black Coffee Table with Gold Accents",
-        category: "tables",
-        price: 74999,
-        image: "img/Dining Tables with chair/Dining Table- Sleek Black Coffee Table with Gold Accents- 6.5'x3'- 74999.jpeg",
-        description: "Classic round design seats 6 people",
-        material: "Solid Oak Wood",
-        dimensions: "Ø 140cm x 75cm"
+        name: "Study Table - Langford Executive Desk",
+        category: "study-tables",
+        price: 32999,
+        image: "img/Study Tables/Study Table-Langford Executive Desk - 22 x 3' - 32999.jpeg",
+        description: "Executive style desk with professional appeal",
+        material: "Premium Wood, Metal Base",
+        dimensions: "22\" x 3'"
     },
+    
+    // Wardrobes
     {
         id: 30,
-        name: "Marlow Cane Console Table",
-        category: "tables",
-        price: 35999,
-        image: "img/Console Tables/Console - Marlow Cane Console - 2'6 x 3' - 35999.jpeg",
-        description: "Space-saving design with gold finish",
-        material: "Engineered Wood, Gold Metal",
-        dimensions: "Various sizes (45-60cm)"
+        name: "Wardrobe - Serene Wardrobe",
+        category: "wardrobes",
+        price: 129999,
+        image: "img/Wardrobes/Wardrobe - Serene Wardrobe - 129999 - 6x9.jpeg",
+        description: "A serene and elegant wardrobe.",
+        material: "Wood",
+        dimensions: "6x9"
     },
     {
         id: 31,
-        name: "Modern White Console Table",
-        category: "tables",
-        price: 44999,
-        image: "img/Console Tables/Console- Modern White Console- 44999.jpeg",
-        description: "Expandable design for large gatherings",
-        material: "Solid Walnut Wood",
-        dimensions: "180-240cm x 95cm x 75cm"
+        name: "Wardrobe - Verelle Cabinet",
+        category: "wardrobes",
+        price: 749999,
+        image: "img/Wardrobes/Wardrobe - Verelle Cabinet -749999.jpeg",
+        description: "A stylish and spacious cabinet.",
+        material: "Wood",
+        dimensions: "N/A"
     },
     {
         id: 32,
-        name: "Console Tables- Elara Table",
-        category: "tables",
-        price: 39999,
-        image: "img/Console Tables/Console Tables- Elara Table - 4'x3'- 39999.jpeg",
-        description: "Sleek Scandinavian-inspired design",
-        material: "Beech Wood, Metal",
-        dimensions: "50cm x 50cm x 55cm"
+        name: "Wardrobe- Armoire",
+        category: "wardrobes",
+        price: 149000,
+        image: "img/Wardrobes/Wardrobe- Armoire- 6' x 8'- 149000.jpeg",
+        description: "A classic armoire for your clothing.",
+        material: "Wood",
+        dimensions: "6' x 8'"
     },
-     {
+    {
         id: 33,
-        name: "Industrial Style Desk",
-        category: "tables",
-        price: 37999,
-        image: "img/Console Tables/Console- Rattan Solid Wood Frame Home Doorway - 37999.jpeg",
-        description: "Urban aesthetic with storage drawers",
-        material: "Reclaimed Wood, Iron Frame",
-        dimensions: "140cm x 70cm x 75cm"
+        name: "Wardrobe- Big Luxury Wooden Wardrobes Armario",
+        category: "wardrobes",
+        price: 179999,
+        image: "img/Wardrobes/Wardrobe- Big Luxury Wooden Wardrobes Armario - 179999.jpeg",
+        description: "A big, luxurious wooden wardrobe.",
+        material: "Wood",
+        dimensions: "N/A"
     },
     {
         id: 34,
-        name: "Traditional Art console Table",
-        category: "tables",
-        price: 42999,
-        image: "img/Console Tables/Console- Traditional Art console - 42999.jpeg",
-        description: "Space-saving design with gold finish",
-        material: "Engineered Wood, Gold Metal",
-        dimensions: "Various sizes (45-60cm)"
-    },
-    {
-        id: 35,
-        name: "Study Table - Brontë Desk",
-        category: "tables",
-        price: 34999,
-        image: "img/Study Tables/Study Table - Brontë Desk - 32999.jpeg",
-        description: "Expandable design for large gatherings",
-        material: "Solid Walnut Wood",
-        dimensions: "180-240cm x 95cm x 75cm"
-    },
-    {
-        id: 36,
-        name: "Study Table- Manor Table",
-        category: "tables",
-        price: 41999,
-        image: "img/Study Tables/Study Table- Manor Table - 3' x 1'10 - 41999 - Copy.jpeg",
-        description: "Sleek Scandinavian-inspired design",
-        material: "Beech Wood, Metal",
-        dimensions: "50cm x 50cm x 55cm"
-    },
-    // Storage
-    {
-        id: 33,
-        name: "Wardrobe with Sliding Doors",
-        category: "storage",
-        price: 124999,
-        image: "https://images.unsplash.com/photo-1595428773653-ddb8c6d58d85?w=800",
-        description: "Spacious storage with mirror finish",
-        material: "Engineered Wood, Glass",
-        dimensions: "240cm x 60cm x 210cm"
-    },
-    {
-        id: 34,
-        name: "Modern Bookshelf Unit",
-        category: "storage",
-        price: 44999,
-        image: "https://images.unsplash.com/photo-1594620302200-9a762244a156?w=800",
-        description: "Open shelving for display and storage",
-        material: "Solid Wood, Metal Frame",
-        dimensions: "180cm x 35cm x 200cm"
-    },
-    {
-        id: 35,
-        name: "Chest of Drawers",
-        category: "storage",
-        price: 54999,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-        description: "Classic design with brass handles",
-        material: "Sheesham Wood",
-        dimensions: "120cm x 45cm x 95cm"
-    },
-    {
-        id: 36,
-        name: "TV Entertainment Unit",
-        category: "storage",
-        price: 74999,
-        image: "https://images.unsplash.com/photo-1603713696021-5a6573b3f998?w=800",
-        description: "Contemporary media console with storage",
-        material: "Walnut Veneer, Engineered Wood",
-        dimensions: "200cm x 45cm x 60cm"
+        name: "Wardrobe- Rattan modern simple wardrobe",
+        category: "wardrobes",
+        price: 68999,
+        image: "img/Wardrobes/Wardrobe- Rattan modern simple wardrobe- 68999.jpeg",
+        description: "A modern and simple rattan wardrobe.",
+        material: "Rattan, Wood",
+        dimensions: "N/A"
     },
 
-    // Decor
+    // Center Tables
+    {
+        id: 35,
+        name: "2-Tiered Japandi Round Walnut Wood Coffee Table with Storage Rattan Base",
+        category: "center-tables",
+        price: 23499,
+        image: "img/Centre Tables/Center Table - 2-Tiered Japandi Round  Walnut Wood Coffee Table with Storage Rattan Base - 23499.jpg",
+        description: "A beautiful and functional Japandi-style coffee table.",
+        material: "Walnut Wood, Rattan",
+        dimensions: "N/A"
+    },
+    {
+        id: 36,
+        name: "Kairos Coffee Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table - Kairos Coffee Table - 25999.jpeg",
+        description: "A stylish and modern coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
     {
         id: 37,
-        name: "Designer Floor Lamp",
-        category: "decor",
-        price: 18999,
-        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800",
-        description: "Arc design with marble base",
-        material: "Brass, Marble",
-        dimensions: "180cm height"
+        name: "Linea Coffee Table",
+        category: "center-tables",
+        price: 23999,
+        image: "img/Centre Tables/Center Table - Linea Coffee Table 23999.jpg",
+        description: "A sleek and minimalist coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
     },
     {
         id: 38,
-        name: "Wall Mirror with Gold Frame",
-        category: "decor",
-        price: 24999,
-        image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800",
-        description: "Statement piece for living spaces",
-        material: "Glass, Metal Frame",
-        dimensions: "90cm x 120cm"
+        name: "Seren Wood Table",
+        category: "center-tables",
+        price: 33999,
+        image: "img/Centre Tables/Center Table - Seren Wood Table- 33999.jpg",
+        description: "A serene and elegant wooden coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
     },
     {
         id: 39,
-        name: "Handwoven Area Rug",
-        category: "decor",
-        price: 34999,
-        image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=800",
-        description: "Premium wool with geometric pattern",
-        material: "100% Wool",
-        dimensions: "200cm x 300cm"
+        name: "Circa Duo Coffee Table",
+        category: "center-tables",
+        price: 32999,
+        image: "img/Centre Tables/Center Table- Circa Duo Coffee Table -32999.jpeg",
+        description: "A unique and stylish duo coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
     },
     {
         id: 40,
-        name: "Decorative Vase Set",
-        category: "decor",
-        price: 8999,
-        image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=800",
-        description: "Ceramic vases in neutral tones",
-        material: "Ceramic",
-        dimensions: "Various (25-40cm height)"
+        name: "Glass Coffee Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table- Glass Coffe Table - 25999.jpeg",
+        description: "A modern glass coffee table.",
+        material: "Glass, Metal",
+        dimensions: "N/A"
+    },
+    {
+        id: 41,
+        name: "Luno Table",
+        category: "center-tables",
+        price: 30999,
+        image: "img/Centre Tables/Center Table- Luno Table- 3' x 20'- 30999.jpeg",
+        description: "A stylish and functional coffee table.",
+        material: "Wood",
+        dimensions: "3' x 20'"
+    },
+    {
+        id: 42,
+        name: "Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table- Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table - 25999.jpeg",
+        description: "A modern and luxurious coffee table.",
+        material: "Sintered Stone, Stainless Steel",
+        dimensions: "N/A"
+    },
+
+    // Dining Tables
+    {
+        id: 43,
+        name: "Orren Jermani Dining Table",
+        category: "dining-tables",
+        price: 81999,
+        image: "img/Dining Tables with chair/Dining Table- Orren Jermani Dining Table- 6.5'x3'- 81999.jpeg",
+        description: "A beautiful and elegant dining table.",
+        material: "Wood",
+        dimensions: "6.5'x3'"
+    },
+    {
+        id: 44,
+        name: "Pakloer European cream style dining table set",
+        category: "dining-tables",
+        price: 91999,
+        image: "img/Dining Tables with chair/Dining Table- Pakloer European cream style dining table set - 91999.jpeg",
+        description: "A stylish and modern dining table set.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 45,
+        name: "Retro Modern Oval Sintered Stone Dining Table Sets",
+        category: "dining-tables",
+        price: 129999,
+        image: "img/Dining Tables with chair/Dining Table- Retro Modern Oval Sintered Stone Dining Table Sets - 129999.jpeg",
+        description: "A retro and modern dining table set.",
+        material: "Sintered Stone, Metal",
+        dimensions: "N/A"
+    },
+    {
+        id: 46,
+        name: "Sleek Black Coffee Table with Gold Accents",
+        category: "dining-tables",
+        price: 74999,
+        image: "img/Dining Tables with chair/Dining Table- Sleek Black Coffee Table with Gold Accents- 6.5'x3'- 74999.jpeg",
+        description: "A sleek and modern dining table with gold accents.",
+        material: "Wood, Metal",
+        dimensions: "6.5'x3'"
+    },
+    {
+        id: 47,
+        name: "Velisse Table",
+        category: "dining-tables",
+        price: 83999,
+        image: "img/Dining Tables with chair/Dining Table- Velisse Table- 6.5'x3'- 83999.jpeg",
+        description: "A stylish and elegant dining table.",
+        material: "Wood",
+        dimensions: "6.5'x3'"
+    },
+    
+    // Side Tables
+    {
+        id: 48,
+        name: "Curvo Side Table",
+        category: "side-tables",
+        price: 18999,
+        image: "img/Side Tables/Side Table - Curvo Side Table - 18999.jpeg",
+        description: "A stylish and curved side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 49,
+        name: "Elysia Table",
+        category: "side-tables",
+        price: 12999,
+        image: "img/Side Tables/Side Table - Elysia Table - 12999.jpg",
+        description: "A beautiful and elegant side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 50,
+        name: "Lunara Table",
+        category: "side-tables",
+        price: 19499,
+        image: "img/Side Tables/Side Table - Lunara Table  - 19499.jpg",
+        description: "A modern and stylish side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 51,
+        name: "Serenno Table",
+        category: "side-tables",
+        price: 22999,
+        image: "img/Side Tables/Side Table - Serenno Table - 22999.jpeg",
+        description: "A serene and elegant side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 52,
+        name: "Seréno Table",
+        category: "side-tables",
+        price: 17999,
+        image: "img/Side Tables/Side Table - Seréno Table  ( Price 17999 ).jpg",
+        description: "A stylish and elegant side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 53,
+        name: "Tavolaé",
+        category: "side-tables",
+        price: 17999,
+        image: "img/Side Tables/Side Table - Tavolaé  ( Price 17999 ).jpg",
+        description: "A unique and stylish side table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+
+    // Console Tables
+    {
+        id: 54,
+        name: "Marlow Cane Console",
+        category: "console-tables",
+        price: 35999,
+        image: "img/Console Tables/Console - Marlow Cane Console - 2'6 x 3' - 35999.jpeg",
+        description: "A beautiful and elegant console table.",
+        material: "Cane, Wood",
+        dimensions: "2'6 x 3'"
+    },
+    {
+        id: 55,
+        name: "Elara Table",
+        category: "console-tables",
+        price: 39999,
+        image: "img/Console Tables/Console Tables- Elara Table - 4'x3'- 39999.jpeg",
+        description: "A stylish and modern console table.",
+        material: "Wood",
+        dimensions: "4'x3'"
+    },
+    {
+        id: 56,
+        name: "Modern White Console",
+        category: "console-tables",
+        price: 44999,
+        image: "img/Console Tables/Console- Modern White Console- 44999.jpeg",
+        description: "A sleek and minimalist console table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 57,
+        name: "Rattan Solid Wood Frame Home Doorway",
+        category: "console-tables",
+        price: 37999,
+        image: "img/Console Tables/Console- Rattan Solid Wood Frame Home Doorway - 37999.jpeg",
+        description: "A beautiful and functional console table.",
+        material: "Rattan, Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 58,
+        name: "Traditional Art console",
+        category: "console-tables",
+        price: 42999,
+        image: "img/Console Tables/Console- Traditional Art console - 42999.jpeg",
+        description: "A traditional and artistic console table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+
+    // Shoe Racks
+    {
+        id: 59,
+        name: "Modena Shoe Cabinet",
+        category: "shoe-racks",
+        price: 39999,
+        image: "img/Shoe Racks/Shoe Rack - Modena Shoe Cabinet - 3'6 x 3' - 39999.jpeg",
+        description: "A stylish and modern shoe cabinet.",
+        material: "Wood",
+        dimensions: "3'6 x 3'"
+    },
+    {
+        id: 60,
+        name: "Rattan wood shoe rack",
+        category: "shoe-racks",
+        price: 42999,
+        image: "img/Shoe Racks/Shoe Rack - Rattan wood shoe rack - 3'6 x 3' - 42999.jpeg",
+        description: "A beautiful and functional rattan shoe rack.",
+        material: "Rattan, Wood",
+        dimensions: "3'6 x 3'"
+    },
+    {
+        id: 61,
+        name: "Rustique Rack",
+        category: "shoe-racks",
+        price: 32999,
+        image: "img/Shoe Racks/Shoe Rack- Rustique Rack- 3.5'x2.5'- 32999.jpeg",
+        description: "A rustic and charming shoe rack.",
+        material: "Wood",
+        dimensions: "3.5'x2.5'"
+    },
+    {
+        id: 62,
+        name: "Walnut Solid Wood",
+        category: "shoe-racks",
+        price: 38999,
+        image: "img/Shoe Racks/Shoe Rack- Walnut Solid Wood - 3'6 x 3' - 38999.jpeg",
+        description: "A solid and durable walnut shoe rack.",
+        material: "Walnut Wood",
+        dimensions: "3'6 x 3'"
+    },
+    {
+        id: 63,
+        name: "White Wood Shoe Rack",
+        category: "shoe-racks",
+        price: 41999,
+        image: "img/Shoe Racks/Shoe Rack- White Wood Shoe Rack - 3'6 x 3' - 41999.jpeg",
+        description: "A clean and modern white shoe rack.",
+        material: "Wood",
+        dimensions: "3'6 x 3'"
     }
 ];
+
 
 // Format price in Indian Rupees
 function formatPrice(price) {
