@@ -431,6 +431,86 @@ const products = [
         material: "Sintered Stone, Stainless Steel",
         dimensions: "N/A"
     },
+    {
+        id: 35,
+        name: "2-Tiered Japandi Round Walnut Wood Coffee Table with Storage Rattan Base",
+        category: "center-tables",
+        price: 23499,
+        image: "img/Centre Tables/Center Table - 2-Tiered Japandi Round  Walnut Wood Coffee Table with Storage Rattan Base - 23499.jpg",
+        description: "A beautiful and functional Japandi-style coffee table.",
+        material: "Walnut Wood, Rattan",
+        dimensions: "N/A"
+    },
+    {
+        id: 36,
+        name: "Kairos Coffee Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table - Kairos Coffee Table - 25999.jpeg",
+        description: "A stylish and modern coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 37,
+        name: "Linea Coffee Table",
+        category: "center-tables",
+        price: 23999,
+        image: "img/Centre Tables/Center Table - Linea Coffee Table 23999.jpg",
+        description: "A sleek and minimalist coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 38,
+        name: "Seren Wood Table",
+        category: "center-tables",
+        price: 33999,
+        image: "img/Centre Tables/Center Table - Seren Wood Table- 33999.jpg",
+        description: "A serene and elegant wooden coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 39,
+        name: "Circa Duo Coffee Table",
+        category: "center-tables",
+        price: 32999,
+        image: "img/Centre Tables/Center Table- Circa Duo Coffee Table -32999.jpeg",
+        description: "A unique and stylish duo coffee table.",
+        material: "Wood",
+        dimensions: "N/A"
+    },
+    {
+        id: 40,
+        name: "Glass Coffee Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table- Glass Coffe Table - 25999.jpeg",
+        description: "A modern glass coffee table.",
+        material: "Glass, Metal",
+        dimensions: "N/A"
+    },
+    {
+        id: 41,
+        name: "Luno Table",
+        category: "center-tables",
+        price: 30999,
+        image: "img/Centre Tables/Center Table- Luno Table- 3' x 20'- 30999.jpeg",
+        description: "A stylish and functional coffee table.",
+        material: "Wood",
+        dimensions: "3' x 20'"
+    },
+    {
+        id: 42,
+        name: "Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table",
+        category: "center-tables",
+        price: 25999,
+        image: "img/Centre Tables/Center Table- Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table - 25999.jpeg",
+        description: "A modern and luxurious coffee table.",
+        material: "Sintered Stone, Stainless Steel",
+        dimensions: "N/A"
+    },
 
     // Dining Tables
     {
