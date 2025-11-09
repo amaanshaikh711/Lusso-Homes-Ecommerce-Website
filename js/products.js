@@ -51,37 +51,37 @@ const products = [
         material: "Velvet, Teak Wood",
         dimensions: "220cm x 90cm x 85cm"
     },
-    // {
-    //     id: 6,
-    //     name: "Contemporary Fabric Sofa",
-    //     category: "sofas",
-    //     price: 74999,
-    //     image: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800",
-    //     description: "Clean lines with comfortable cushioning",
-    //     material: "Textured Fabric, Solid Wood",
-    //     dimensions: "200cm x 88cm x 82cm"
-    // },
-    // {
-    //     id: 7,
-    //     name: "Scandinavian Style Sofa",
-    //     category: "sofas",
-    //     price: 94999,
-    //     image: "https://images.unsplash.com/photoss-1551298370-9d3d53740c72?w=800",
-    //     description: "Nordic-inspired design with wooden legs",
-    //     material: "Wool Blend, Beech Wood",
-    //     dimensions: "195cm x 85cm x 78cm"
-    // },
-    // {
-    //     id: 8,
-    //     name: "Luxury Italian Leather Sofa",
-    //     category: "sofas",
-    //     price: 179999,
-    //     image: "https://images.unsplash.com/photo-159830ss0042247-d088f8ab3a91?w=800",
-    //     description: "Handcrafted Italian leather with superior comfort",
-    //     material: "Italian Leather, Walnut Wood",
-    //     dimensions: "240cm x 100cm x 88cm"
-    // },
-
+    {
+        id: 6,
+        name: "Velin Sofa",
+        category: "sofas",
+        price: 125000,
+        image: "img/Sofas/6_Velin Sofa_125000.jpg",
+        description: "Mid-century modern 3-seater sofa featuring a sleek wooden frame and plush, deep-cushioned upholstery. The design highlights clean lines and a minimalist silhouette, blending comfort with timeless elegance",
+        material: "Velvet Fabric, Solid Walnut Wood",
+        dimensions: "230cm x 90cm x 85cm"
+    },
+    {
+        id: 7,
+        name: "Florence Cloud Sofa",
+        category: "sofas",
+        price: 135000,
+        image: "img/Sofas/7_Florence Cloud Sofa_135000.jpg",
+        description: "Contemporary low-profile 3-seater sofa featuring plush cloud-like cushioning and a solid wood base. Its wide armrests with integrated wooden shelving combine modern design with functional comfort, making it a perfect centerpiece for relaxed, elegant living spaces.",
+        material: "Linen Blend Fabric, Solid Oak Wood",
+        dimensions: "240cm x 95cm x 80cm"
+    },
+    {
+        id: 8,
+        name: "Orion Sofa",
+        category: "sofas",
+        price: 175000,
+        image: "img/Sofas/8_Orion Sofa_175000.jpg",
+        description: "Modern designer 3-seater sofa featuring a sculpted silhouette with generous cushioning and a matte black wooden base. Its sleek, low-profile form and soft textured upholstery create a perfect blend of comfort and understated luxury, ideal for contemporary interiors.",
+        material: "Textured Fabric, Matte Black Oak Wood",
+        dimensions: "235cm x 95cm x 85cm"
+    },
+    
     // Beds
     {
         id: 9,
@@ -133,36 +133,36 @@ const products = [
         material: "Engineered Wood",
         dimensions: "Queen Size (152cm x 190cm)"
     },
-    // {
-    //     id: 14,
-    //     name: "Canopy Bed with Posts",
-    //     category: "beds",
-    //     price: 154999,
-    //     image: "https://images.unsplash.com/photo-157889888723te1-dff65121b59f?w=800",
-    //     description: "Statement four-poster design",
-    //     material: "Solid Mango Wood",
-    //     dimensions: "King Size (183cm x 203cm)"
-    // },
-    // {
-    //     id: 15,
-    //     name: "Contemporary Leather Bed",
-    //     category: "beds",
-    //     price: 129999,
-    //     image: "https://images.unsplash.com/photo-161rg5529328331-f8917597711f?w=800",
-    //     description: "Sleek leather finish with LED lighting",
-    //     material: "Premium Leather, Metal Frame",
-    //     dimensions: "King Size (183cm x 203cm)"
-    // },
-    // {
-    //     id: 16,
-    //     name: "Rustic Farmhouse Bed",
-    //     category: "beds",
-    //     price: 89999,
-    //     image: "https://images.unsplash.com/photo-1564078516393-csdf04bd966897?w=800",
-    //     description: "Reclaimed wood aesthetic with vintage charm",
-    //     material: "Reclaimed Teak Wood",
-    //     dimensions: "Queen Size (152cm x 190cm)"
-    // },
+    {
+        id: 14,
+        name: "Elegant American Style Solid Wood Bed",
+        category: "beds",
+        price: 114999,
+        image: "img/Beds/6_Elegant American Style Solid Wood Bed - Timeless Comfort_.jpeg.jpg",
+        description: "Elegant American Style Solid Wood Bed with Timeless Comfort",
+        material: "Solid Wood",
+        dimensions: "King Size (183cm x 203cm)"
+    },
+    {
+        id: 15,
+        name: "Regal Charm & Dramatic Floral Accent Bed",
+        category: "beds",
+        price: 104699,
+        image: "img/Beds/7_Elegant Bedroom with Regal Charm & Dramatic Floral Accent 104699.jpeg.jpg",
+        description: "Elegant Bedroom with Regal Charm & Dramatic Floral Accent",
+        material: "Premium Leather, Metal Frame",
+        dimensions: "King Size (183cm x 203cm)"
+    },
+    {
+        id: 16,
+        name: "lumea bed ",
+        category: "beds",
+        price: 84999,
+        image: "img/Beds/8_lumea bed_84999 .jpeg.jpg",
+        description: "Reclaimed wood aesthetic with vintage charm",
+        material: "Reclaimed Teak Wood",
+        dimensions: "Queen Size (152cm x 190cm)"
+    },
 
     // Chairs
     {
@@ -432,7 +432,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 35,
+        id: 43,
         name: "2-Tiered Japandi Round Walnut Wood Coffee Table with Storage Rattan Base",
         category: "center-tables",
         price: 23499,
@@ -442,7 +442,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 36,
+        id: 44,
         name: "Kairos Coffee Table",
         category: "center-tables",
         price: 25999,
@@ -452,7 +452,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 37,
+        id: 45,
         name: "Linea Coffee Table",
         category: "center-tables",
         price: 23999,
@@ -462,7 +462,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 38,
+        id: 46,
         name: "Seren Wood Table",
         category: "center-tables",
         price: 33999,
@@ -472,7 +472,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 39,
+        id: 47,
         name: "Circa Duo Coffee Table",
         category: "center-tables",
         price: 32999,
@@ -482,7 +482,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 40,
+        id: 48,
         name: "Glass Coffee Table",
         category: "center-tables",
         price: 25999,
@@ -492,7 +492,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 41,
+        id: 49,
         name: "Luno Table",
         category: "center-tables",
         price: 30999,
@@ -502,7 +502,7 @@ const products = [
         dimensions: "3' x 20'"
     },
     {
-        id: 42,
+        id: 50,
         name: "Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table",
         category: "center-tables",
         price: 25999,
@@ -514,7 +514,7 @@ const products = [
 
     // Dining Tables
     {
-        id: 43,
+        id: 51,
         name: "Orren Jermani Dining Table",
         category: "dining-tables",
         price: 81999,
@@ -524,7 +524,7 @@ const products = [
         dimensions: "6.5'x3'"
     },
     {
-        id: 44,
+        id: 52,
         name: "Pakloer European cream style dining table set",
         category: "dining-tables",
         price: 91999,
@@ -534,7 +534,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 45,
+        id: 53,
         name: "Retro Modern Oval Sintered Stone Dining Table Sets",
         category: "dining-tables",
         price: 129999,
@@ -544,7 +544,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 46,
+        id: 54,
         name: "Sleek Black Coffee Table with Gold Accents",
         category: "dining-tables",
         price: 74999,
@@ -554,7 +554,7 @@ const products = [
         dimensions: "6.5'x3'"
     },
     {
-        id: 47,
+        id: 55,
         name: "Velisse Table",
         category: "dining-tables",
         price: 83999,
@@ -566,7 +566,7 @@ const products = [
     
     // Side Tables
     {
-        id: 48,
+        id: 56,
         name: "Curvo Side Table",
         category: "side-tables",
         price: 18999,
@@ -576,7 +576,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 49,
+        id: 57,
         name: "Elysia Table",
         category: "side-tables",
         price: 12999,
@@ -586,7 +586,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 50,
+        id: 58,
         name: "Lunara Table",
         category: "side-tables",
         price: 19499,
@@ -596,7 +596,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 51,
+        id: 59,
         name: "Serenno Table",
         category: "side-tables",
         price: 22999,
@@ -606,7 +606,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 52,
+        id: 60,
         name: "Seréno Table",
         category: "side-tables",
         price: 17999,
@@ -616,7 +616,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 53,
+        id: 61,
         name: "Tavolaé",
         category: "side-tables",
         price: 17999,
@@ -628,7 +628,7 @@ const products = [
 
     // Console Tables
     {
-        id: 54,
+        id: 62,
         name: "Marlow Cane Console",
         category: "console-tables",
         price: 35999,
@@ -638,7 +638,7 @@ const products = [
         dimensions: "2'6 x 3'"
     },
     {
-        id: 55,
+        id: 63,
         name: "Elara Table",
         category: "console-tables",
         price: 39999,
@@ -648,7 +648,7 @@ const products = [
         dimensions: "4'x3'"
     },
     {
-        id: 56,
+        id: 64,
         name: "Modern White Console",
         category: "console-tables",
         price: 44999,
@@ -658,7 +658,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 57,
+        id: 65,
         name: "Rattan Solid Wood Frame Home Doorway",
         category: "console-tables",
         price: 37999,
@@ -668,7 +668,7 @@ const products = [
         dimensions: "N/A"
     },
     {
-        id: 58,
+        id: 66,
         name: "Traditional Art console",
         category: "console-tables",
         price: 42999,
@@ -680,7 +680,7 @@ const products = [
 
     // Shoe Racks
     {
-        id: 59,
+        id: 67,
         name: "Modena Shoe Cabinet",
         category: "shoe-racks",
         price: 39999,
@@ -690,7 +690,7 @@ const products = [
         dimensions: "3'6 x 3'"
     },
     {
-        id: 60,
+        id: 68,
         name: "Rattan wood shoe rack",
         category: "shoe-racks",
         price: 42999,
@@ -700,7 +700,7 @@ const products = [
         dimensions: "3'6 x 3'"
     },
     {
-        id: 61,
+        id: 69,
         name: "Rustique Rack",
         category: "shoe-racks",
         price: 32999,
@@ -710,7 +710,7 @@ const products = [
         dimensions: "3.5'x2.5'"
     },
     {
-        id: 62,
+        id: 70,
         name: "Walnut Solid Wood",
         category: "shoe-racks",
         price: 38999,
@@ -720,7 +720,7 @@ const products = [
         dimensions: "3'6 x 3'"
     },
     {
-        id: 63,
+        id: 71,
         name: "White Wood Shoe Rack",
         category: "shoe-racks",
         price: 41999,
