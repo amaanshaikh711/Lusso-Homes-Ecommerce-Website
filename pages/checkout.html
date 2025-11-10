@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Lusso Homes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #E5DDD0;
+            padding: 24px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #E5DDD0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #8B6F47;
+            box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+        }
+        .progress-step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .progress-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: white;
+            background-color: #D4AF9A;
+        }
+        .progress-circle.active {
+            background-color: #8B6F47;
+        }
+        .progress-circle.completed {
+            background-color: #10B981;
+        }
+        .step-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .step-label.active {
+            color: #8B6F47;
+            font-weight: 600;
+        }
+        .payment-option {
+            border: 2px solid #E5DDD0;
+            border-radius: 8px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .payment-option:hover {
+            border-color: #8B6F47;
+            background-color: #FAF8F3;
+        }
+        .payment-option.selected {
+            border-color: #8B6F47;
+            background-color: #FAF8F3;
+        }
+        .payment-radio {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #E5DDD0;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .payment-radio.checked {
+            background-color: #8B6F47;
+            border-color: #8B6F47;
+        }
+        .btn-primary {
+            background-color: #8B6F47;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background-color: #6F5938;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 111, 71, 0.2);
+        }
+        .btn-primary:disabled {
+            background-color: #D4AF9A;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .order-item {
+            display: flex;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #E5DDD0;
+        }
+        .order-item:last-child {
+            border-bottom: none;
+        }
+        .item-image {
+            width: 60px;
+            height: 60px;
+            background-color: #F5F1E8;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+        .summary-row.total {
+            padding-top: 16px;
+            margin-top: 16px;
+            border-top: 2px solid #E5DDD0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #8B6F47;
+        }
+        .notification-toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10B981;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: none;
+            gap: 12px;
+            align-items: center;
+            z-index: 1000;
+        }
+        .notification-toast.show {
+            display: flex;
+            animation: slideIn 0.3s ease;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-neutral-50">
+    <!-- Notification Toast -->
+    <div id="notification" class="notification-toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-text">Success!</span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="logo">
+                    <!-- <img src="img/logo_LH.jpg" alt="Lusso Homes Logo" class="logo-img"> -->
+                    <span class="logo-text">Lusso Homes</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6">
+                    <a href="wishlist.html" class="nav-icon-link">
+                        <i class="far fa-heart"></i>
+                        <span class="nav-badge" id="wishlist-count">0</span>
+                    </a>
+                    <a href="cart.html" class="nav-icon-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="nav-badge" id="cart-count">0</span>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-2xl text-neutral-700">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="../index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Shop</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-amber-100 to-amber-50 py-8 text-center border-b border-amber-200">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-amber-900 mb-1">Checkout</h1>
+            <p class="text-sm md:text-base text-amber-800">Complete your order securely</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-8 md:py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Left Column - Form -->
+                <div class="lg:col-span-2 space-y-6">
+                    
+                    <!-- Progress Indicator -->
+                    <div class="section-card">
+                        <h3 class="font-bold mb-6 flex items-center gap-2">
+                            <i class="fas fa-list-check"></i> Order Steps
+                        </h3>
+                        <div class="progress-step">
+                            <div class="progress-circle active">1</div>
+                            <div class="step-label active">Shipping Address</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="progress-circle">2</div>
+                            <div class="step-label">Payment Method</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="progress-circle">3</div>
+                            <div class="step-label">Review & Confirm</div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Information -->
+                    <div class="section-card">
+                        <h2 class="text-2xl font-bold mb-6">
+                            <i class="fas fa-map-pin"></i> Shipping Address
+                        </h2>
+                        
+                        <form id="checkoutForm" class="space-y-4">
+                            <!-- Full Name -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name*</label>
+                                <input type="text" id="fullName" class="input-field" placeholder="John Doe" required>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email*</label>
+                                    <input type="email" id="email" class="input-field" placeholder="john@example.com" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone*</label>
+                                    <input type="tel" id="phone" class="input-field" placeholder="+91 98765 43210" required>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Street Address*</label>
+                                <input type="text" id="address" class="input-field" placeholder="123 Main Street" required>
+                            </div>
+
+                            <!-- City, State, ZIP -->
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">City*</label>
+                                    <input type="text" id="city" class="input-field" placeholder="Mumbai" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">State*</label>
+                                    <input type="text" id="state" class="input-field" placeholder="Maharashtra" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">PIN Code*</label>
+                                    <input type="text" id="pincode" class="input-field" placeholder="400001" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="section-card">
+                        <h2 class="text-2xl font-bold mb-6">
+                            <i class="fas fa-credit-card"></i> Payment Method
+                        </h2>
+                        
+                        <div class="space-y-3">
+                            <!-- Razorpay Option -->
+                            <div class="payment-option selected" onclick="selectPaymentMethod('razorpay', this)">
+                                <div class="payment-radio checked"></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Credit/Debit Card or UPI</h4>
+                                    <p class="text-sm text-gray-600">Pay securely via Razorpay</p>
+                                </div>
+                            </div>
+
+                            <!-- Net Banking Option -->
+                            <div class="payment-option" onclick="selectPaymentMethod('netbanking', this)">
+                                <div class="payment-radio"></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Net Banking</h4>
+                                    <p class="text-sm text-gray-600">Pay from your bank account</p>
+                                </div>
+                            </div>
+
+                            <!-- Wallet Option -->
+                            <div class="payment-option" onclick="selectPaymentMethod('wallet', this)">
+                                <div class="payment-radio"></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Digital Wallets</h4>
+                                    <p class="text-sm text-gray-600">Google Pay, Apple Pay, PhonePe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column - Order Summary -->
+                <div class="lg:col-span-1">
+                    <div class="section-card sticky top-24">
+                        <h2 class="text-xl font-bold mb-4">
+                            <i class="fas fa-shopping-bag"></i> Order Summary
+                        </h2>
+
+                        <!-- Order Items -->
+                        <div id="checkoutItems" class="mb-4">
+                            <p class="text-gray-600 text-center py-2 text-sm">Loading cart items...</p>
+                        </div>
+
+                        <!-- Price Summary -->
+                        <div class="space-y-2 py-4 border-t-2 border-b-2 border-gray-200">
+                            <div class="summary-row text-sm">
+                                <span>Subtotal</span>
+                                <span id="subtotal">₹0</span>
+                            </div>
+                            <div class="summary-row text-sm">
+                                <span>Shipping</span>
+                                <span id="shipping">₹1,500</span>
+                            </div>
+                            <div class="summary-row text-sm">
+                                <span>Tax (18%)</span>
+                                <span id="tax">₹0</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-row total text-base mt-3">
+                            <span>Total</span>
+                            <span id="totalAmount">₹0</span>
+                        </div>
+
+                        <!-- Order Button -->
+                        <button onclick="proceedToPayment()" class="btn-primary mt-6">
+                            <i class="fas fa-lock"></i> Pay Now
+                        </button>
+
+                        <p class="text-center text-xs text-gray-600 mt-4">
+                            <i class="fas fa-shield-alt"></i> Secure payment powered by Razorpay
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6 mb-6">
+                <div>
+                    <h3 class="footer-title text-sm">Lusso Homes</h3>
+                    <p class="footer-text text-xs">Bringing luxury and comfort to your home since 2020.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading text-sm">Quick Links</h4>
+                    <ul class="footer-links text-xs">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading text-sm">Support</h4>
+                    <ul class="footer-links text-xs">
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading text-sm">Connect</h4>
+                    <div class="social-icons text-sm">
+                        <a href="https://www.facebook.com/share/19yLx9SDQk/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lussohomes.in?igsh=cDNtaXI4MXhjOTNw" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-xs">
+                <p>&copy; 2025 Lusso Homes. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top-btn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Razorpay Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        let selectedPaymentMethod = 'razorpay';
+        const shippingCost = 1500;
+        const taxRate = 0.18;
+
+        // Load cart items on page load
+        window.addEventListener('DOMContentLoaded', loadCheckoutItems);
+
+        // Load cart items
+        function loadCheckoutItems() {
+            const cartData = JSON.parse(localStorage.getItem('lusso-cart')) || [];
+            const container = document.getElementById('checkoutItems');
+            
+            let subtotal = 0;
+            container.innerHTML = '';
+
+            if (cartData.length === 0) {
+                container.innerHTML = '<p class="text-red-600 font-bold">Your cart is empty!</p>';
+                return;
+            }
+
+            cartData.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                
+                container.innerHTML += `
+                    <div class="order-item">
+                        <img src="${getImageUrl(item.image)}" alt="${item.name}" class="item-image" onerror="this.src='https://via.placeholder.com/60'">
+                        <div class="flex-1">
+                            <p class="font-semibold text-sm text-gray-800">${item.name}</p>
+                            <p class="text-xs text-gray-600">Qty: ${item.quantity}</p>
+                        </div>
+                        <p class="font-semibold text-sm">₹${itemTotal.toLocaleString('en-IN')}</p>
+                    </div>
+                `;
+            });
+
+            // Calculate totals
+            const tax = Math.round(subtotal * taxRate);
+            const total = subtotal + tax + shippingCost;
+
+            document.getElementById('subtotal').textContent = '₹' + subtotal.toLocaleString('en-IN');
+            document.getElementById('tax').textContent = '₹' + tax.toLocaleString('en-IN');
+            document.getElementById('totalAmount').textContent = '₹' + total.toLocaleString('en-IN');
+        }
+
+        // Select payment method
+        function selectPaymentMethod(method, element) {
+            selectedPaymentMethod = method;
+            
+            document.querySelectorAll('.payment-option').forEach(option => {
+                option.classList.remove('selected');
+                option.querySelector('.payment-radio').classList.remove('checked');
+            });
+            
+            element.classList.add('selected');
+            element.querySelector('.payment-radio').classList.add('checked');
+        }
+
+        // Validate form
+        function validateForm() {
+            const form = document.getElementById('checkoutForm');
+            if (!form.checkValidity()) {
+                alert('Please fill all required fields');
+                return false;
+            }
+            return true;
+        }
+
+        // Proceed to payment
+        function proceedToPayment() {
+            if (!validateForm()) return;
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const city = document.getElementById('city').value;
+            const state = document.getElementById('state').value;
+            const pincode = document.getElementById('pincode').value;
+
+            const cartData = JSON.parse(localStorage.getItem('lusso-cart')) || [];
+            let subtotal = 0;
+            cartData.forEach(item => subtotal += item.price * item.quantity);
+
+            const tax = Math.round(subtotal * taxRate);
+            const totalAmount = subtotal + tax + shippingCost;
+
+            // Razorpay Payment Options
+            const options = {
+                key: 'rzp_test_YourKeyHere', // Replace with your Razorpay Key ID
+                amount: totalAmount * 100, // Amount in paise
+                currency: 'INR',
+                name: 'Lusso Homes',
+                description: 'Premium Furniture Purchase',
+                prefill: {
+                    name: fullName,
+                    email: email,
+                    contact: phone
+                },
+                theme: {
+                    color: '#8B6F47'
+                },
+                handler: function (response) {
+                    handlePaymentSuccess(response, {
+                        fullName, email, phone, address, city, state, pincode,
+                        subtotal, tax, totalAmount
+                    });
+                },
+                modal: {
+                    ondismiss: function () {
+                        alert('Payment cancelled by user');
+                    }
+                }
+            };
+
+            const rzp = new Razorpay(options);
+            rzp.open();
+        }
+
+        // Handle payment success
+        function handlePaymentSuccess(response, orderDetails) {
+            console.log('Payment successful:', response);
+            
+            // Save order details
+            const order = {
+                orderId: 'ORD' + Date.now(),
+                paymentId: response.razorpay_payment_id,
+                ...orderDetails,
+                items: JSON.parse(localStorage.getItem('lusso-cart')),
+                date: new Date().toISOString()
+            };
+
+            localStorage.setItem('lastOrder', JSON.stringify(order));
+            
+            // Clear cart
+            localStorage.removeItem('lusso-cart');
+
+            // Show success message
+            showNotification('Payment successful! Redirecting...');
+
+            // Redirect to success page
+            setTimeout(() => {
+                window.location.href = 'order-success.html?orderId=' + order.orderId;
+            }, 2000);
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notification-text');
+            
+            if (notification && notificationText) {
+                notificationText.textContent = message;
+                notification.classList.add('show');
+                
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>

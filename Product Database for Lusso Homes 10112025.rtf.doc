@@ -1,0 +1,826 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\f0\fs22\lang2057 // Product Database for Lusso Homes\par
+const products = [\par
+    // Sofas\par
+    \{\par
+        id: 1,\par
+        name: "Velvet Charm Modern Sofa",\par
+
+\pard         category: "sofas",micro fiber fabric with  \par
+
+\pard         price: 78999,\par
+        image: "img/Sofas/Sofas- velvet charm modern sofa - 78999.jpeg",\par
+
+\pard         description: "Premium button-tufted design with gold accents"with the various qaulity of fabric and wood with different option with customize option",( CUSTOMIZE ) \par
+
+\pard         fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony , burma ,sal. \par
+        dimensionsWidth: 85"  (216 cm), Depth: 36" (91 cm), Height: 34" (86 cm), Seat Height: 18" (46 cm)\par
+    \par
+    \{\par
+        id: 2,\par
+        name: "Minimalist 2-Seater Loveseat",\par
+
+\pard         category: "sofas",micro fiber fabric with teak wood \par
+
+\pard         price: 64999,\par
+        image: "img/Sofas/Sofas- Oslo Sofa- 64999.jpeg",\par
+
+\pard         description: "Compact and elegant design for smaller spaces"with different fabric option with ms frame base with powder coating with colour option ",( CUSTOMIZE )\par
+
+\pard         fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony  ,burma ,sal. \par
+        dimensions : Width: 82" (208 cm), Depth: 35" (89 cm), Height: 33" (84 cm), Seat Height: 17"(43 cm)\par
+    \},\par
+    \{\par
+        id: 3,\par
+        name: "Modern Orange Two seater Sofa",\par
+
+\pard         category: "sofas",micro fiber fabric with teak wood \par
+
+\pard         price: 64999,\par
+        image: "img/Sofas/Sofas- Orange Couch - 64999.jpeg",\par
+
+\pard         description: "Spacious sectional perfect for family gatherings",minimal theme design couch with different fabric option with high density of branded foam use for durablity with pine wood frame structure and cover with the cushion with customize as per size ",( CUSTOMIZE )\par
+
+\pard         fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony burma ,sal.   \par
+        dimensions: Width: 84" (213 cm), Depth: 35" (88.9cm), Height: 33"(84 cm), Seat Height: 18" (46 cm)\par
+    \},\par
+    \{\par
+        id: 4,\par
+        name: "Classic Chesterfield Sofa",\par
+        category: "sofas",micro fiber fabric with teak wood \par
+        price: 94999,\par
+        image: "img/Sofas/Sofas- Luma Sofa- 69999.jpeg",\par
+
+\pard         description: luxury option in miniaml design of couch with various fabric , as well as wood option for frame work to get core strength and increase durablity of product ",( CUSTOMIZE )\par
+
+\pard        fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony burma ,sal.   \par
+        dimensions : Width: 84"(213 cm), Depth: 35" (89 cm), Height: 32" (81 cm), Seat Height: 17"(43 cm)\par
+    \},\par
+    \{\par
+        id: 5,\par
+        name: "Valencia Velvet 3-Seater Sofa",\par
+
+\pard         category: "sofas",micro fiber fabric with teak wood \par
+
+\pard         price: 89999,\par
+        image: "img/Sofas/Sofas- Elliot Sofa- 84999.jpeg",\par
+
+\pard         description: "Luxurious velvet upholstery with solid wood frame",with various fabric option as well as with wood option to increase the core strength of sofa to make product durable ",( CUSTOMIZE )\par
+
+\pard         fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony \par
+        dimensions: " width 86" (218 cm), Depth: 36" (91 cm), Height: 33" (84 cm), Seat Height: 18" (46 cm)\par
+    \},\par
+    \{\par
+        id: 6,\par
+        name: "Velin Sofa"\par
+        category: "sofas",micro fiber fabric with teak wood \par
+        price: 125000,\par
+        image: "img/Sofas/6_Velin Sofa_125000.jpg",\par
+        description: "Mid-century modern 3-seater sofa featuring a sleek wooden frame and plush, deep-cushioned upholstery. The design highlights clean lines and a minimalist silhouette, blending comfort with timeless elegance",( CUSTOMIZE )\par
+        fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony \par
+        dimensions : Width: 84" (213 cm), Depth: 36" (91 cm), Height: 32" (81 cm), Seat Height: 18" (46 cm)\par
+    \},\par
+    \{\par
+        id: 7,\par
+        name: "Florence Cloud Sofa",\par
+        category: "sofas",micro fiber fabric with teak wood \par
+        price: 135000,\par
+        image: "img/Sofas/7_Florence Cloud Sofa_135000.jpg",\par
+        description: "Contemporary low-profile 3-seater sofa featuring plush cloud-like cushioning and a solid wood base. Its wide armrests with integrated wooden shelving combine modern design with functional comfort, making it a perfect centerpiece for relaxed, elegant living spaces.",\par
+        fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony ",\par
+        dimensions: Width: 86"(218 cm), Depth: 40" (102 cm), Height: 32"(81 cm), Seat Height: 17" (43 cm)\par
+    \},\par
+    \{\par
+        id: 8,\par
+        name: "Orion Sofa",\par
+
+\pard         category: "sofas",micro fiber fabric with teak wood \par
+
+\pard         price: 175000,\par
+        image: "img/Sofas/8_Orion Sofa_175000.jpg",\par
+        description: "Modern designer 3-seater sofa featuring a sculpted silhouette with generous cushioning and a matte black wooden base. Its sleek, low-profile form and soft textured upholstery create a perfect blend of comfort and understated luxury, ideal for contemporary interiors.",\par
+        fabric  material: velvet , cotton , linen microfiber ,\line        wood material : oak , teak , pine , mahagony ",\par
+        dimensions: Width: 92" (234 cm), Depth: 38" (97 cm), Height: 33" (84 cm), Seat Height: 18" (46 cm)\par
+    \},\par
+    \par
+    // Beds\par
+    \{\par
+        id: 9,\par
+        name: "Aurelia Bed - King Size",\par
+        category: "beds",\par
+        price: 129999,\par
+        image: "img/Beds/Beds- Aurelia Bed - 5' x6' - 129999.jpeg",\par
+        description: "Elegant upholstered headboard with storage",luxurious design bed with solid wood and cover with the pu coat with fabric finish with multiple option with customize size .\par
+
+\pard         fabric: velvet , cotton , linen microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal. \par
+
+\pard\par
+        dimensions: "queen  Size ( width 5' x length 6' x height 1'4")\par
+    \},\par
+    \{\par
+        id: 10,\par
+        name: "Modern Canopy Beds",\par
+        category: "beds",\par
+        price: 114999,\par
+        image: "img/Beds/Beds- Canopy Beds - 129999.jpeg",\par
+        description: "Low-profile contemporary design", with luxurious feel made up of solid wood and cover with the polish and bed board will be cover with the cushion \par
+
+\pard         fabric: velvet , cotton , linen microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal. \par
+        dimensions: "Queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard\par
+    \},\par
+    \{\par
+        id: 11,\par
+        name: "Elegant Wave Design Wooden Bed",\par
+        category: "beds",\par
+        price: 112999 ,\par
+        image: "img/Beds/Beds- Elegant Wave Design Wooden Bed - 112999.jpeg",\par
+        description: "industrial design with carved details" in wooden feel. With industrial design theme in luxurious concept with wave design will give an unique and creative perspetive for bed .\par
+        fabric: velvet , cotton , linen microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal",\par
+
+\pard         dimensions: "Queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard\par
+    \},\par
+    \{\par
+        id: 12,\par
+        name: "Luxury Elysian Bed",\par
+        category: "beds",\par
+        price: 111999,\par
+        image: "img/Beds/Beds- Elysian Bed 5' x6' - 111999.jpeg",\par
+        description: "Premium velvet with diamond tufting",in teak wood finish with wooden carving design on wooden pillar and cover with the polish finish with customize size \par
+        fabric: velvet , cotton , linen microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal\par
+
+\pard         dimensions: "Queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard "\par
+    \},\par
+    \{\par
+        id: 13,\par
+        name: "Harmony Bed - Queen Size",\par
+        category: "beds",\par
+        price: 74999,\par
+        image: "img/Beds/Beds- Harmony Bed - 5' x 6' - 134999.jpeg",\par
+        description: "Built-in storage drawers for organization"and cover with the teak wood with cushion bed board with pu polish in satin with customize size .\line          fabric: velvet , cotton , linen , microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal",\par
+
+\pard         dimensions: "Queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard\par
+    \{\par
+        id: 14,\par
+        name: "Elegant American Style Solid Wood Bed",\par
+        category: "beds",\par
+        price: 114999,\par
+        image: "img/Beds/6_Elegant American Style Solid Wood Bed - Timeless Comfort_.jpeg.jpg",\par
+        description: "Elegant American Style Solid Wood Bed with Timeless Comfort",with industrial theme design with luxurious look to enhance the space .\par
+        fabric: velvet , cotton , linen , microfiber, \line          wood : oak , teak , pine , mahagony , burma ,sal",\par
+
+\pard         dimensions: "queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard "\par
+    \},\par
+    \{\par
+        id: 15,\par
+        name: "Regal Charm & Dramatic Floral Accent Bed",\par
+        category: "beds",\par
+        price: 104699,\par
+        image: "img/Beds/7_Elegant Bedroom with Regal Charm & Dramatic Floral Accent 104699.jpeg.jpg",\par
+        description: "Elegant Bedroom with Regal Charm & Dramatic Floral Accent",\par
+
+\pard         fabric: velvet , cotton , linen , microfiber, \line          wood : ply wood ,oak , teak , pine , mahagony , burma ,sal",\par
+        dimensions: "queen Size ( width 5' x length 6' x height 1'4")\par
+
+\pard\par
+    \},\par
+    \{\par
+        id: 16,\par
+        name: "lumea bed ",\par
+        category: "beds",\par
+        price: 84999,\par
+        image: "img/Beds/8_lumea bed_84999 .jpeg.jpg",\par
+        description: one of the best modern design bedboard  cover with the cushion with hydraulic storage even head board cover with the cushion with luxurious feel\par
+        fabric: velvet , cotton , linen , microfiber, \line          wood : ply wood ,oak , teak , pine , mahagony , burma ,sal\par
+        dimensions: "Queen Size (5' x 6' )\par
+    \},\par
+\par
+    // Chairs\par
+    \{\par
+        id: 17,\par
+        name: "Mid-Century Leather Lounge Chair",\par
+        category: "chairs" teak wood  ,\par
+        price: 14999,\par
+        image: "img/chair/black.jpg",\par
+        description: "Classic design with black leather and walnut frame",\par
+        fabric: velvet , cotton , linen , microfiber,leather \line          wood : ply wood ,oak , teak , mahagony \par
+        dimensions: width 29.5" x depth   31" x height 33"\par
+    \},\par
+    \{\par
+        id: 18,\par
+        name: "Vellor\'c3\'a9 Chair",\par
+        category: "chairs"teak wood ,\par
+        price: 23499,\par
+        image: "img/chair/Chair -Vellor\'c3\'a9 Chair - ( Price 23399 ).jpg",\par
+        description: "Contemporary swivel design with brass  accents",one of the best unique design of dining chair \par
+
+\pard         fabric: velvet , cotton , linen , microfiber, leather\line          wood : ply wood ,oak , teak , mahagony , burma ,sal,\par
+        dimensions: Width: 27" (69 cm), Depth: 28" (71 cm), Height: 32" (81 cm), Seat Height: 18" (46 cm)\par
+
+\pard\par
+    \{\par
+        id: 19,\par
+        name: "Circa Bar Stool",\par
+        category: "chairs" teak wood ,\par
+        price: 25999,\par
+        image: "img/chair/Chair-  Circa Bar Stool- 25999.jpeg",\par
+        description: "Minimalist design with suede finish",with wooden legs with pu satin polish and seating is cover with the leather finish with different option \par
+        fabric: velvet , cotton , linen , microfiber,leather  \line          wood : ply wood ,oak , teak , mahagony ,\par
+        dimensions: Width: 19" (48 cm), Depth: 20" (51 cm), Height: 40" (102 cm), Seat Height: 30" (76 cm)\par
+    \{\par
+        id: 20,\par
+        name: "Ardelle Bar Stool",\par
+        category: "chairs"teak wood ,\par
+        price: 30999,\par
+        image: "img/chair/Chair- Ardelle Bar Stool - 30999.jpeg",\par
+        description: "Elegant curved back design",luxurious bar stool with teak wood and cover with cushion that enhance the bar area \par
+
+\pard         fabric: velvet , cotton , linen , microfiber, leather \line          wood : ply wood ,oak , teak , mahagony ,\par
+
+\pard         dimensions: Width: 20" (51 cm), Depth: 21" (53 cm), Height: 41" (104 cm), Seat Height: 30" (76 cm)\par
+    \},\par
+    \{\par
+        id: 21,\par
+        name: "Olea Chair ",\par
+        category: "chairs"teak wood ,\par
+        price: 18999,\par
+        image: "img/chair/Chair- Olea Chair - 18999.jpeg",\par
+        description: "Unique sculptural design with brass details",with elegant look and decent design for dining chair and curve part and cover with fabric with premium look \par
+
+\pard         fabric: velvet , cotton , linen , microfiber, leather \line          wood : ply wood ,oak , teak , mahagony ,\par
+
+\pard         dimensions: Width: 22" (56 cm), Depth: 23" (58 cm), Height: 33" (84 cm), Seat Height: 18" (46 cm)\par
+    \},\par
+    \{\par
+        id: 22,\par
+        name: "Franka Dining Chair",\par
+        category: "chairs"teak wood ,\par
+        price: 21999,\par
+        image: "img/chair/Chairs- Franka Dining Chair- 21999.jpeg",\par
+        description: "Traditional elegance with modern comfort",with sleek look and fabric finish on base and back             \par
+         fabric: velvet , cotton , linen , microfiber, leather \line          wood : ply wood ,oak , teak  , mahagony \par
+        dimensions: Width: 20" (51 cm), Depth: 22" (56 cm), Height: 34"(86 cm), Seat Height: 18"(46 cm)\par
+    \},\par
+    \{\par
+        id: 23,.\par
+        name: "Office Executive Chair",\par
+        category: "chairs"teak wood ,\par
+        price: 22999,\par
+        image: "img/chair/red.jpg",\par
+        description: "Ergonomic leather chair with lumbar support",\par
+        fabric: velvet , cotton , linen , microfiber, leather \line          wood : ply wood ,oak , teak , mahagony \par
+        dimensions: width 27" (70cm) x depth 29" (75cm) x height 36" (91cm")\par
+    \},\par
+    \{\par
+        id: 24,\par
+        name: "Rattan Accent Chair",\par
+        category: "chairs"teak wood ,\par
+        price: 27999,\par
+        image: "img/chair/white.jpg",\par
+        description: "Natural rattan weave with cushion",\par
+
+\pard         fabric: velvet , cotton , linen , microfiber, leather \line          wood : ply wood ,oak , teak , mahagony \par
+
+\pard         dimensions: width 25" 65cm) x depth 27.5" (70cm) x height 33" (85cm)\par
+    \},\par
+    \par
+    // Study Tables\par
+    \{\par
+        id: 25,\par
+        name: "Study Table - Bront\'c3\'ab Desk",\par
+        category: "study-tables"teak wood ,\par
+        price: 32999,\par
+        image: "img/Study Tables/Study Table - Bront\'c3\'ab Desk - 32999.jpeg",\par
+        description: "Classic design with ample workspace",\par
+        material: oak , teak  , mahagony,burma  \par
+        dimensions: width 3' x depth 2' x height 2'7"\par
+    \},\par
+    \{\par
+        id: 26,\par
+        name: "Study Table - Manor Table",\par
+        category: "study-tables"teak wood ,\par
+        price: 41999,\par
+        image: "img/Study Tables/Study Table- Manor Table - 3' x 1'10 - 41999 - Copy.jpeg",\par
+        description: "Elegant manor-style study desk with spacious surface",\par
+        material: oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 3' x depth 2' x height 2'7""\par
+    \},\par
+    \{\par
+        id: 27,\par
+        name: "Study Table - Stratford Table",\par
+        category: "study-tables"teak wood ,\par
+        price: 45999,\par
+        image: "img/Study Tables/Study Table- Stratford Table -1'10 x\'c2\~3'- 45999.jpeg",\par
+        description: "Contemporary design with modern aesthetics",\par
+        material: : "oak , teak  , mahagony,burma"  \par
+        dimensions: width 3' x depth 2' x height 2'7"\par
+    \},\par
+    \{\par
+        id: 28,\par
+        name: "Study Table - Ventana Writing Desk",\par
+        category: "study-tables"teak wood ,\par
+        price: 30999,\par
+        image: "img/Study Tables/Study Table- Ventana Writing Desk- 30999.jpeg",\par
+        description: "Modern writing desk with minimalist design",\par
+        material: "oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 3' x depth 2' x height 2'7""\par
+    \},\par
+    \{\par
+        id: 29,\par
+        name: "Study Table - Langford Executive Desk",\par
+        category: "study-tables"teak wood ,\par
+        price: 32999,\par
+        image: "img/Study Tables/Study Table-Langford Executive Desk - 22\'c2\~x\'c2\~3' - 32999.jpeg",\par
+        description: "Executive style desk with professional appeal",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 3' x depth 2' x height 2'7""\par
+    \},\par
+    \par
+    // Wardrobes\par
+    \{\par
+        id: 30,\par
+        name: "Wardrobe - Serene Wardrobe",\par
+        category: "wardrobes"teak wood ,\par
+        price: 129999,\par
+        image: "img/Wardrobes/Wardrobe - Serene Wardrobe - 129999 - 6x9.jpeg",\par
+        description: "A serene and elegant wardrobe.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 6' x depth 2' x height 8'"\par
+    \},\par
+    \{\par
+        id: 31,\par
+        name: "Wardrobe - Verelle Cabinet",\par
+        category: "wardrobes"teak wood ,\par
+        price: 174999,\par
+        image: "img/Wardrobes/Wardrobe - Verelle Cabinet -749999.jpeg",\par
+        description: "A stylish and spacious cabinet.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 6' x depth 2' x height 8'""\par
+    \},\par
+    \{\par
+        id: 32,\par
+        name: "Wardrobe- Armoire",\par
+        category: "wardrobes"teak wood ,\par
+        price: 149000,\par
+        image: "img/Wardrobes/Wardrobe- Armoire- 6' x 8'- 149000.jpeg",\par
+        description: "A classic armoire for your clothing.",\par
+        material: "WoodPremium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 6' x depth 2' x height 8'""\par
+    \{\par
+        id: 33,\par
+        name: "Wardrobe- Big Luxury Wooden Wardrobes Armario",\par
+        category: "wardrobes"teak wood ,\par
+        price: 179999,\par
+        image: "img/Wardrobes/Wardrobe- Big Luxury Wooden Wardrobes Armario - 179999.jpeg",\par
+        description: "A big, luxurious wooden wardrobe.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: "width 6' x depth 2' x height 8'""\par
+    \},\par
+    \{\par
+        id: 34,\par
+        name: "Wardrobe- Rattan modern simple wardrobe",\par
+        category: "wardrobes"teak wood ,\par
+        price: 68999,\par
+        image: "img/Wardrobes/Wardrobe- Rattan modern simple wardrobe- 68999.jpeg",\par
+        description: "A modern and simple rattan wardrobe.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma  ",\par
+        dimensions: width 6' x depth 2' x height 8'"\par
+    \},\par
+\par
+    // Center Tables\par
+    \{\par
+        id: 35,\par
+        name: "2-Tiered Japandi Round Walnut Wood Coffee Table with Storage Rattan Base",\par
+        category: "center-tables"teak wood ,\par
+        price: 23499,\par
+        image: "img/Centre Tables/Center Table - 2-Tiered Japandi Round  Walnut Wood Coffee Table with Storage Rattan Base - 23499.jpg",\par
+        description: "A beautiful and functional Japandi-style coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 36,\par
+        name: "Kairos Coffee Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table - Kairos Coffee Table - 25999.jpeg",\par
+        description: "A stylish and modern coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 37,\par
+        name: "Linea Coffee Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 23999,\par
+        image: "img/Centre Tables/Center Table - Linea Coffee Table 23999.jpg",\par
+        description: "A sleek and minimalist coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 38,\par
+        name: "Seren Wood Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 33999,\par
+        image: "img/Centre Tables/Center Table - Seren Wood Table- 33999.jpg",\par
+        description: "A serene and elegant wooden coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 39,\par
+        name: "Circa Duo Coffee Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 32999,\par
+        image: "img/Centre Tables/Center Table- Circa Duo Coffee Table -32999.jpeg",\par
+        description: "A unique and stylish duo coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 40,\par
+        name: "Glass Coffee Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table- Glass Coffe Table - 25999.jpeg",\par
+        description: "A modern glass coffee table.",\par
+        material: "Glass, Metal",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 41,\par
+        name: "Luno Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 30999,\par
+        image: "img/Centre Tables/Center Table- Luno Table- 3' x 20'- 30999.jpeg",\par
+        description: "A stylish and functional coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 42,\par
+        name: "Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table",\par
+        category: "center-tables"teak wood ,\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table- Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table - 25999.jpeg",\par
+        description: "A modern and luxurious coffee table.",\par
+        material: "Sintered Stone, Stainless Steel",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 43,\par
+        name: "2-Tiered Japandi Round Walnut Wood Coffee Table with Storage Rattan Base",\par
+        category: "center-tables"teak wood ,\par
+        price: 23499,\par
+        image: "img/Centre Tables/Center Table - 2-Tiered Japandi Round  Walnut Wood Coffee Table with Storage Rattan Base - 23499.jpg",\par
+        description: "A beautiful and functional Japandi-style coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 44,\par
+        name: "Kairos Coffee Table",\par
+        category: "center-tables"teak wood,\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table - Kairos Coffee Table - 25999.jpeg",\par
+        description: "A stylish and modern coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 45,\par
+        name: "Linea Coffee Table",\par
+        category: "center-tables"teak wood,\par
+        price: 23999,\par
+        image: "img/Centre Tables/Center Table - Linea Coffee Table 23999.jpg",\par
+        description: "A sleek and minimalist coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 46,\par
+        name: "Seren Wood Table",\par
+        category: "center-tables"teak wood,\par
+        price: 33999,\par
+        image: "img/Centre Tables/Center Table - Seren Wood Table- 33999.jpg",\par
+        description: "A serene and elegant wooden coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 47,\par
+        name: "Circa Duo Coffee Table",\par
+        category: "center-tables"teak wood,\par
+        price: 32999,\par
+        image: "img/Centre Tables/Center Table- Circa Duo Coffee Table -32999.jpeg",\par
+        description: "A unique and stylish duo coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 48,\par
+        name: "Glass Coffee Table",\par
+        category: "center-tables",\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table- Glass Coffe Table - 25999.jpeg",\par
+        description: "A modern glass coffee table.",\par
+        material: "Glass, Metal",\par
+        dimensions: "N/A"\par
+    \},\par
+    \{\par
+        id: 49,\par
+        name: "Luno Table",\par
+        category: "center-tables"teak wood,\par
+        price: 30999,\par
+        image: "img/Centre Tables/Center Table- Luno Table- 3' x 20'- 30999.jpeg",\par
+        description: "A stylish and functional coffee table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 50,\par
+        name: "Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table",\par
+        category: "center-tables",\par
+        price: 25999,\par
+        image: "img/Centre Tables/Center Table- Modern Round Coffee Table Stainless Steel White Sintered Stone Top Accent Table - 25999.jpeg",\par
+        description: "A modern and luxurious coffee table.",\par
+        material: "Sintered Stone, Stainless Steel",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+\par
+    // Dining Tables\par
+    \{\par
+        id: 51,\par
+        name: "Orren Jermani Dining Table",\par
+        category: "dining-tables"teak wood,\par
+        price: 81999,\par
+        image: "img/Dining Tables with chair/Dining Table- Orren Jermani Dining Table- 6.5'x3'- 81999.jpeg",\par
+        description: "A beautiful and elegant dining table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "6.5'x3'CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 52,\par
+        name: "Pakloer European cream style dining table set",\par
+        category: "dining-tables"teak wood,\par
+        price: 91999,\par
+        image: "img/Dining Tables with chair/Dining Table- Pakloer European cream style dining table set - 91999.jpeg",\par
+        description: "A stylish and modern dining table set.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 53,\par
+        name: "Retro Modern Oval Sintered Stone Dining Table Sets",\par
+        category: "dining-tables"teak wood,\par
+        price: 129999,\par
+        image: "img/Dining Tables with chair/Dining Table- Retro Modern Oval Sintered Stone Dining Table Sets - 129999.jpeg",\par
+        description: "A retro and modern dining table set.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 54,\par
+        name: "Sleek Black Coffee Table with Gold Accents",\par
+        category: "dining-tables"teak wood,\par
+        price: 74999,\par
+        image: "img/Dining Tables with chair/Dining Table- Sleek Black Coffee Table with Gold Accents- 6.5'x3'- 74999.jpeg",\par
+        description: "A sleek and modern dining table with gold accents.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma Metal",\par
+        dimensions: "6.5'x3' CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 55,\par
+        name: "Velisse Table",\par
+        category: "dining-tables"teak wood,\par
+        price: 83999,\par
+        image: "img/Dining Tables with chair/Dining Table- Velisse Table- 6.5'x3'- 83999.jpeg",\par
+        description: "A stylish and elegant dining table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "6.5'x3'CUSTOMIZE "\par
+    \},\par
+    \par
+    // Side Tables\par
+    \{\par
+        id: 56,\par
+        name: "Curvo Side Table",\par
+        category: "side-tables"teak wood,\par
+        price: 18999,\par
+        image: "img/Side Tables/Side Table - Curvo Side Table - 18999.jpeg",\par
+        description: "A stylish and curved side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 57,\par
+        name: "Elysia Table",\par
+        category: "side-tables"teak wood,\par
+        price: 12999,\par
+        image: "img/Side Tables/Side Table - Elysia Table - 12999.jpg",\par
+        description: "A beautiful and elegant side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 58,\par
+        name: "Lunara Table",\par
+        category: "side-tables"teak wood,\par
+        price: 19499,\par
+        image: "img/Side Tables/Side Table - Lunara Table  - 19499.jpg",\par
+        description: "A modern and stylish side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 59,\par
+        name: "Serenno Table",\par
+        category: "side-tables"teak wood,\par
+        price: 22999,\par
+        image: "img/Side Tables/Side Table - Serenno Table - 22999.jpeg",\par
+        description: "A serene and elegant side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 60,\par
+        name: "Ser\'c3\'a9no Table",\par
+        category: "side-tables"teak wood,\par
+        price: 17999,\par
+        image: "img/Side Tables/Side Table - Ser\'c3\'a9no Table  ( Price 17999 ).jpg",\par
+        description: "A stylish and elegant side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 61,\par
+        name: "Tavola\'c3\'a9",\par
+        category: "side-tables"teak wood,\par
+        price: 17999,\par
+        image: "img/Side Tables/Side Table - Tavola\'c3\'a9  ( Price 17999 ).jpg",\par
+        description: "A unique and stylish side table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+\par
+    // Console Tables\par
+    \{\par
+        id: 62,\par
+        name: "Marlow Cane Console",\par
+        category: "console-tables"teak wood,\par
+        price: 35999,\par
+        image: "img/Console Tables/Console - Marlow Cane Console - 2'6 x\'c2\~3' - 35999.jpeg",\par
+        description: "A beautiful and elegant console table.",\par
+        material: "Cane, Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "2'6 x 3' CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 63,\par
+        name: "Elara Table",\par
+        category: "console-tables"teak wood,\par
+        price: 39999,\par
+        image: "img/Console Tables/Console Tables- Elara Table - 4'x3'- 39999.jpeg",\par
+        description: "A stylish and modern console table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "4'x3' CUSTOMIZE "\par
+    \},\par
+    \{\par
+        id: 64,\par
+        name: "Modern White Console",\par
+        category: "console-tables"teak wood,\par
+        price: 44999,\par
+        image: "img/Console Tables/Console- Modern White Console- 44999.jpeg",\par
+        description: "A sleek and minimalist console table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 65,\par
+        name: "Rattan Solid Wood Frame Home Doorway",\par
+        category: "console-tables"teak wood,\par
+        price: 37999,\par
+        image: "img/Console Tables/Console- Rattan Solid Wood Frame Home Doorway - 37999.jpeg",\par
+        description: "A beautiful and functional console table.",\par
+        material: "Rattan, Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+    \{\par
+        id: 66,\par
+        name: "Traditional Art console",\par
+        category: "console-tables"teak wood,\par
+        price: 42999,\par
+        image: "img/Console Tables/Console- Traditional Art console - 42999.jpeg",\par
+        description: "A traditional and artistic console table.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "CUSTOMIZE"\par
+    \},\par
+\par
+    // Shoe Racks\par
+    \{\par
+        id: 67,\par
+        name: "Modena Shoe Cabinet",\par
+        category: "shoe-racks"teak wood,\par
+        price: 39999,\par
+        image: "img/Shoe Racks/Shoe Rack - Modena Shoe Cabinet - 3'6 x 3' - 39999.jpeg",\par
+        description: "A stylish and modern shoe cabinet.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "3'6 x 3'"\par
+    \},\par
+    \{\par
+        id: 68,\par
+        name: "Rattan wood shoe rack",\par
+        category: "shoe-racks"teak wood,\par
+        price: 42999,\par
+        image: "img/Shoe Racks/Shoe Rack - Rattan wood shoe rack - 3'6 x 3' - 42999.jpeg",\par
+        description: "A beautiful and functional rattan shoe rack.",\par
+        material: "Rattan, Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "3'6 x 3'"\par
+    \},\par
+    \{\par
+        id: 69,\par
+        name: "Rustique Rack",\par
+        category: "shoe-racks"teak wood,\par
+        price: 32999,\par
+        image: "img/Shoe Racks/Shoe Rack- Rustique Rack- 3.5'x2.5'- 32999.jpeg",\par
+        description: "A rustic and charming shoe rack.",\par
+        material: "Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "3.5'x2.5'"\par
+    \},\par
+    \{\par
+        id: 70,\par
+        name: "Walnut Solid Wood",\par
+        category: "shoe-racks"teak wood,\par
+        price: 38999,\par
+        image: "img/Shoe Racks/Shoe Rack- Walnut Solid Wood - 3'6 x 3' - 38999.jpeg",\par
+        description: "A solid and durable walnut shoe rack.",\par
+        material: "Walnut Wood, Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "3'6 x 3'"\par
+    \},\par
+    \{\par
+        id: 71,\par
+        name: "White Wood Shoe Rack",\par
+        category: "shoe-racks"teak wood,\par
+        price: 41999,\par
+        image: "img/Shoe Racks/Shoe Rack- White Wood Shoe Rack - 3'6 x 3' - 41999.jpeg",\par
+        description: "A clean and modern white shoe rack.",\par
+        material: "Wood Premium Wood, oak , teak  , mahagony,burma",\par
+        dimensions: "3'6 x 3'"\par
+    \}\par
+];\par
+\par
+\par
+// Format price in Indian Rupees\par
+function formatPrice(price) \{\par
+    return '\'e2\'82\'b9' + price.toLocaleString('en-IN');\par
+\}\par
+\par
+// Get products by category\par
+function getProductsByCategory(category) \{\par
+    return products.filter(product => product.category === category);\par
+\}\par
+\par
+// Get product by ID\par
+function getProductById(id) \{\par
+    return products.find(product => product.id === parseInt(id));\par
+\}\par
+\par
+// Get all categories\par
+function getAllCategories() \{\par
+    return [...new Set(products.map(product => product.category))];\par
+\}\par
+\par
+// Search products\par
+function searchProducts(query) \{\par
+    const lowerQuery = query.toLowerCase();\par
+    return products.filter(product => \par
+        product.name.toLowerCase().includes(lowerQuery) ||\par
+        product.description.toLowerCase().includes(lowerQuery) ||\par
+        product.category.toLowerCase().includes(lowerQuery)\par
+    );\par
+\}\par
+\par
+// Sort products\par
+function sortProducts(productList, sortBy) \{\par
+    switch(sortBy) \{\par
+        case 'price-low':\par
+            return [...productList].sort((a, b) => a.price - b.price);\par
+        case 'price-high':\par
+            return [...productList].sort((a, b) => b.price - a.price);\par
+        case 'name':\par
+            return [...productList].sort((a, b) => a.name.localeCompare(b.name));\par
+        default:\par
+            return productList;\par
+    \}\par
+\}\par
+}
+ 

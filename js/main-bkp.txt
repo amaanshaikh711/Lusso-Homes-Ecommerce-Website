@@ -456,22 +456,7 @@ function loadWishlist() {
 
 // Proceed to checkout
 function proceedToCheckout() {
-    // Get cart from localStorage
-    const cart = JSON.parse(localStorage.getItem('lusso-cart')) || [];
-    
-    // Check if cart is empty
-    if (cart.length === 0) {
-        alert('Your cart is empty. Please add items before checkout.');
-        return;
-    }
-    
-    // Determine the correct path to checkout.html based on current location
-    const path = window.location.pathname || '';
-    const needsParent = path.includes('/pages/') || path.includes('\\pages\\');
-    const checkoutUrl = needsParent ? 'checkout.html' : 'pages/checkout.html';
-    
-    // Redirect to checkout page
-    window.location.href = checkoutUrl;
+    alert('Checkout functionality would be implemented here. This is a demo website.');
 }
 
 // Handle newsletter subscription
