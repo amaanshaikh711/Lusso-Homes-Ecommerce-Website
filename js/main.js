@@ -386,7 +386,7 @@ function loadCart() {
     // Calculate totals
     const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
     const tax = subtotal * 0.18; // 18% GST
-    const shipping = subtotal > 50000 ? 0 : 1500;
+    const shipping = subtotal > 50000 ? 0 : 0;
     const total = subtotal + tax + shipping;
     
     // Render summary

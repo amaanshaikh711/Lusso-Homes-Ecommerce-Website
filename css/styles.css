@@ -548,8 +548,8 @@ html {
 /* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
     margin-top: 40px;
 }
 
@@ -562,6 +562,9 @@ html {
     transition: all 0.3s ease;
     cursor: pointer;
     animation: fadeIn 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -572,8 +575,10 @@ html {
 .product-image-container {
     position: relative;
     overflow: hidden;
-    padding-top: 100%;
+    width: 100%;
+    height: 280px;
     background: var(--neutral-100);
+    flex-shrink: 0;
 }
 
 .product-image {
@@ -620,35 +625,41 @@ html {
 }
 
 .product-info {
-    padding: 20px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-category {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--gold);
     font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
 }
 
 .product-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--neutral-900);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 40px;
+    line-height: 1.3;
 }
 
 .product-price {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--gold);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    margin-top: auto;
 }
 
 .product-actions {
@@ -661,11 +672,15 @@ html {
     background: var(--gold);
     color: white;
     border: none;
-    padding: 12px;
+    padding: 11px 12px;
     border-radius: 8px;
     font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn-cart:hover {
@@ -1101,7 +1116,42 @@ html {
     }
 
     .video-section {
-        height: 200px;
+        height: 300px;
+    }
+
+    .video-content {
+        padding: 20px;
+    }
+
+    .video-title {
+        font-size: clamp(24px, 4vw, 40px);
+        margin-bottom: 12px;
+    }
+
+    .video-subtitle {
+        font-size: clamp(14px, 2vw, 20px);
+        margin-bottom: 20px;
+    }
+
+    .testimonial-slide-group {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        min-height: auto;
+    }
+
+    .testimonial-card {
+        padding: 16px 12px 14px 12px;
+        min-height: auto;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .testimonial-slider {
+        min-height: auto;
+        padding: 16px 12px 40px 12px;
     }
 
     .cart-item {
@@ -1129,6 +1179,38 @@ html {
 
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-section {
+        height: 280px;
+    }
+
+    .video-title {
+        font-size: clamp(20px, 3.5vw, 32px);
+        margin-bottom: 10px;
+    }
+
+    .video-subtitle {
+        font-size: clamp(12px, 1.8vw, 16px);
+        margin-bottom: 16px;
+    }
+
+    .testimonial-slide-group {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .testimonial-card {
+        padding: 14px 10px 12px 10px;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-slider {
+        padding: 14px 10px 36px 10px;
     }
 }
 
@@ -2202,6 +2284,7 @@ select.form-input {
 .btn-add-to-cart:hover {
     background: var(--gold-dark);
     transform: translateY(-2px);
+    
 }
 
 .btn-add-to-cart i {
@@ -2338,4 +2421,89 @@ select.form-input {
         width: 60px;
         height: 60px;
     }
+}
+
+/* Product Detail Page Button Overrides */
+#add-to-cart-btn {
+    background: var(--gold) !important;
+    color: white !important;
+    padding: 11px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.2, 1) !important;
+    width: 100% !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 12px rgba(201, 166, 107, 0.2) !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+#add-to-cart-btn:hover {
+    background: var(--gold-dark) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(201, 166, 107, 0.3) !important;
+}
+
+#add-to-cart-btn:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(201, 166, 107, 0.2) !important;
+}
+
+#add-to-cart-btn i {
+    margin-right: 0.4rem !important;
+    font-size: 13px !important;
+    flex-shrink: 0;
+}
+
+#add-to-wishlist-btn {
+    background: var(--neutral-100) !important;
+    color: var(--neutral-700) !important;
+    padding: 11px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.2, 1) !important;
+    width: 100% !important;
+    border: 2px solid var(--neutral-300) !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+#add-to-wishlist-btn:hover {
+    background: var(--neutral-200) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
+    border-color: var(--neutral-400) !important;
+}
+
+#add-to-wishlist-btn.active {
+    background: var(--gold) !important;
+    color: white !important;
+    border-color: var(--gold) !important;
+    box-shadow: 0 4px 12px rgba(201, 166, 107, 0.2) !important;
+}
+
+#add-to-wishlist-btn.active:hover {
+    background: var(--gold-dark) !important;
+    border-color: var(--gold-dark) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(201, 166, 107, 0.3) !important;
+}
+
+#add-to-wishlist-btn i {
+    margin-right: 0.4rem !important;
+    font-size: 13px !important;
+    flex-shrink: 0;
 }
